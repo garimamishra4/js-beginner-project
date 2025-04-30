@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding around the content */
+}
+
+.nav {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    float: none;
+}
+
+.weightguide, .container {
+    height:60% ;
+    width: 45%; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 10px; /* Add some space between the divs */
+}
+
+.weightguide {
+    background-color: #f9f9f9;
+    float: left;
+}
+
+.container {
+    background-color: #e8f5e9;
+    float: right;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container form p {
+    margin-bottom: 10px;
+}
+
+.container form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container form button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack divs vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .weightguide, .container {
+        width: 90%; /* Take up more width on smaller screens */
+    }
+}
